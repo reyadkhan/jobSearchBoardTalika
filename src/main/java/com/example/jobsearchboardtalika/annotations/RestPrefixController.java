@@ -1,6 +1,5 @@
 package com.example.jobsearchboardtalika.annotations;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,5 +19,5 @@ import java.lang.annotation.Target;
 @RequestMapping
 public @interface RestPrefixController {
     @AliasFor(annotation = RequestMapping.class, attribute = "path")
-    String[] value() default {"/api/"};
+    String[] value() default {"${app.apiPrefix:api}"};
 }
