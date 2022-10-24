@@ -15,6 +15,4 @@ public class BaseControllerTest {
 
     @Autowired
     ObjectMapper objectMapper;
-
-    static final String BASE_URL = "/api/companies";
 }

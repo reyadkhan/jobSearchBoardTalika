@@ -17,6 +17,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 public class CompanyControllerCreationTest extends BaseControllerTest {
 
+    static final String BASE_URL = "/api/companies";
+
     @Autowired
     private CompanyRepository repository;
 
